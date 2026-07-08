@@ -44,6 +44,10 @@ src/
 
 - [react-router (declarative mode)](https://reactrouter.com/start/declarative/installation)
 
+## 2. Clases
+
+- [clase 06/07/2026](./clases/CLASE_06072026.MD)
+
 ## 3. Utilidades
 
 - [Fake Store Api](https://fakestoreapi.com/docs)
