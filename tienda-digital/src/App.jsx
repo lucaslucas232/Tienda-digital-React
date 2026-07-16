@@ -1,22 +1,24 @@
-import { route, routes} from "react-router";
+import { Route, Routes} from "react-router";
 import Layout from "./components/Layout";
-import home from "./pages/Home";
+import Home from "./pages/Home";
 
 function App() {
  
 
   return (
     <>
-    <routes>
-      <route element={<Layout />}>
-      <route index element={<Home />} />
+    <Routes>
+      <Route element={<Layout />}>
+      <Route index element={<Home />} />
 
-      <route path="/about" element={<h2>About</h2>} />
-      </route>
-      <h1>Tienda digital</h1>
-      </routes>
+      <Route path="" element={<h2>About</h2>} />
+      </Route>
+      
+      </Routes>
     </>
   )
 }
 
-export default App
+
+export default App;
+

@@ -1,4 +1,4 @@
-import {outlet} from "react-router";
+import {Outlet} from "react-router";
 
 const Layout = () => {
     return ( 
@@ -7,7 +7,7 @@ const Layout = () => {
                 <h1>tienda digital</h1>
             </header>
 
-            <outlet />
+            <Outlet />
 
             <footer>
                 <p>&copy; 2026 Tienda Digital. Todos los derechos reservados.</p>
@@ -15,3 +15,4 @@ const Layout = () => {
         </>
     );
 };
+export default Layout
