@@ -1,9 +1,13 @@
 import { createContext, useContext, useState } from "react";
+import getProductos from "../bin/getProductos";
 
 const ProductoContext = createContext(undefined);
 
 export const ProductoProvider = ({ children }) => {
     const [productos, setProductos] = useState([])
+useEffect (() => {
+  getProductos() 
+}, [])
 
     return (
         <ProductoContext.Provider value={{productos, setProductos}}>
