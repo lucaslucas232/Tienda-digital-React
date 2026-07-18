@@ -1,18 +1,18 @@
-import {Outlet} from "react-router";
+import { Outlet } from "react-router";
 
 const Layout = () => {
-    return ( 
-        <>
-            <header>
-                <h1>tienda digital</h1>
-            </header>
+  return (
+    <>
+      <header>
+        <h1>Tienda Digital</h1>
+      </header>
 
-            <Outlet />
+      <Outlet />
 
-            <footer>
-                <p>&copy; 2026 Tienda Digital. Todos los derechos reservados.</p>
-            </footer>
-        </>
-    );
+      <footer>
+        <p>&copy; 2026 Tienda Digital. Todos los derechos reservados.</p>
+      </footer>
+    </>
+  );
 };
-export default Layout
+export default Layout;

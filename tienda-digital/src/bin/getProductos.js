@@ -1,12 +1,15 @@
 const URL_API = "https://fakestoreapi.com/products";
-export default function getProductos() {
+
+export default async function getProductos() {
 try {
     const res = await fetch(URL_API);
     const data = await res.json();
-    console.log(data);
+    
+    if (!data) throw new Error("No se pudo obtener los productos");
+    return data;
 
 } catch (error) {
-return -1;
-
+    console.error("algo falló", error);
+    return [];
 }
 }

@@ -1,19 +1,27 @@
+import { useProducto } from "../contexts/ProductosContext.jsx";
 import { useState } from "react";
 
 const Home = () => {
-    const [productos, setProductos] = useState([]);
-    return (
-        <div>
-            <h2>Home</h2>
+  const { productos } = useProducto();
+  return (
+    <div>
+      <h2 style={{ textAlign: "center" }}>Welcome</h2>
 
-            {productos.map((producto) => (
-                <div key={producto.id}>
-                    <p>{producto.title}</p>
-                    <img src={producto.image} alt={producto.title} />
-                </div>
-            ))}
-        </div>
-    );
+      <div className="contenedor-columnas">
+        {productos.map((producto) => (
+          <div key={producto.id} className="columna">
+            <p>{producto.title}</p>
+            <img
+              src={producto.image}
+              alt={producto.title}
+              width={200}
+              height={200}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-export default Home
+export default Home;
