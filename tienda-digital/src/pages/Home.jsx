@@ -11,6 +11,7 @@ const Home = () => {
       <div className="contenedor-columnas">
         {productos.map((producto) => (
           <div key={producto.id} className="columna">
+            <Link to={`/producto/${producto.id}`}>Ver producto</Link>
             <p>{producto.title}</p>
             <img
               src={producto.image}
