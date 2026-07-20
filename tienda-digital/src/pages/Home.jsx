@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Home = () => {
   const { productos } = useProducto();
+
   return (
     <div>
       <h2 style={{ textAlign: "center" }}>Welcome</h2>
